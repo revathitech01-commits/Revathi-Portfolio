@@ -1,20 +1,18 @@
-/* 🌙 Global Styling */
+/* ===== Base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #eaeaea;
   min-height: 100vh;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-/* 🧭 Navigation Bar */
+/* ===== Navbar ===== */
 nav {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
@@ -25,7 +23,6 @@ nav {
   z-index: 100;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-
 nav a {
   color: #d1d5db;
   margin: 0 18px;
@@ -35,125 +32,61 @@ nav a {
   letter-spacing: 0.5px;
   transition: 0.3s;
 }
-
 nav a:hover {
-  color: #14b8a6; /* teal accent */
+  color: #14b8a6;
   text-shadow: 0 0 8px #14b8a6;
 }
 
-/* ✨ Main Content */
+/* ===== Container ===== */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 80px auto;
-  padding: 10px 20px;
-  animation: fadeIn 1s ease-in-out;
+  padding: 20px;
 }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 🏷 Headings */
 h1, h2, h3 {
   color: #14b8a6;
   margin-bottom: 20px;
-  text-transform: capitalize;
 }
-
 h1 {
-  font-size: 2.8rem;
   color: #fff;
+  font-size: 2.5rem;
 }
-
-h2 {
-  font-size: 1.8rem;
-  border-left: 4px solid #14b8a6;
-  padding-left: 10px;
-}
-
-/* 📄 Paragraphs */
 p {
-  font-size: 1rem;
   color: #d4d4d4;
   margin-bottom: 20px;
 }
-
-/* 🔘 Buttons */
 .button {
-  display: inline-block;
   background: #14b8a6;
   color: #0f172a;
   padding: 10px 25px;
   border-radius: 25px;
-  font-weight: 600;
   text-decoration: none;
-  letter-spacing: 0.5px;
   transition: 0.3s;
 }
-
 .button:hover {
   background: #0d9488;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 0 10px #14b8a6;
 }
 
-/* 💼 Projects */
-.project-card {
-  background: rgba(255, 255, 255, 0.05);
+/* ===== Cards ===== */
+.project-card, ul li {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  margin: 10px 0;
   border-left: 4px solid #14b8a6;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: 0.3s;
+  border-radius: 8px;
 }
-
-.project-card:hover {
-  transform: translateX(5px);
+.project-card:hover, ul li:hover {
   background: rgba(255,255,255,0.08);
 }
 
-/* 🧠 Skills List */
-ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-ul li {
-  background: rgba(255, 255, 255, 0.07);
-  padding: 12px 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  color: #e5e5e5;
-  transition: 0.3s;
-}
-
-ul li:hover {
-  background: rgba(255, 255, 255, 0.12);
-  transform: translateX(5px);
-}
-
-/* 🔗 Contact Links */
-a {
-  color: #14b8a6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* 📱 Responsive */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   nav a {
     display: block;
     margin: 10px 0;
   }
-
-  .container {
-    margin: 40px auto;
-  }
 }
+
 
