@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Revathi's Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #2E86C1; }
-    .project { margin-bottom: 20px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revathi | DevSecOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hi, I'm Revathi</h1>
-  <p>DevSecOps Engineer | Python | Terraform | CI/CD | AWS</p>
 
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Multi-environment Terraform Deployment</h3>
-    <p>Automated infrastructure across dev, staging, and prod using Terraform workspaces.</p>
-    <p>Tech: Terraform, AWS</p>
-    <a href="#">View Code</a>
+  <!-- Navigation -->
+  <nav style="background:#2E86C1; padding:10px; text-align:center;">
+    <a href="#home" style="color:white; margin:10px;">Home</a>
+    <a href="#about" style="color:white; margin:10px;">About</a>
+    <a href="#projects" style="color:white; margin:10px;">Projects</a>
+    <a href="#contact" style="color:white; margin:10px;">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" style="padding:50px; text-align:center;">
+    <h1>Hi, I'm Revathi</h1>
+    <p>DevSecOps Engineer | Python | Terraform | CI/CD | AWS</p>
+    <a href="#projects" style="background:#2E86C1;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">See My Projects</a>
   </div>
 
-  <h2>Contact</h2>
-  <p>Email: your.email@example.com</p>
-  <p>LinkedIn: <a href="#">Profile</a></p>
+  <!-- About Section -->
+  <div id="about" style="padding:50px;">
+    <h2>About Me</h2>
+    <p>I’m a DevSecOps Engineer passionate about automation, cloud security, and building scalable CI/CD systems.</p>
+    <p><strong>Skills:</strong> Terraform, AWS, Python, Kubernetes, CI/CD, Jenkins, GitHub Actions</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects" style="padding:50px;">
+    <h2>Projects</h2>
+
+    <div class="project-card" onclick="window.open('https://github.com/yourusername/project1','_blank')" style="border:1px solid #ccc; padding:15px; margin-bottom:20px; cursor:pointer;">
+      <h3>Multi-Environment Terraform Deployment</h3>
+      <p>Automated deployment across dev, staging, and prod using Terraform workspaces.</p>
+      <p><strong>Tech:</strong> Terraform, AWS</p>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://github.com/yourusername/project2','_blank')" style="border:1px solid #ccc; padding:15px; margin-bottom:20px; cursor:pointer;">
+      <h3>CI/CD Automation Pipeline</h3>
+      <p>Integrated security scanning in CI/CD pipeline with Jenkins and GitHub Actions.</p>
+      <p><strong>Tech:</strong> Jenkins, Docker</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" style="padding:50px;">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+  </div>
+
 </body>
 </html>
